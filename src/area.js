@@ -3,8 +3,8 @@ const readlineSync = require("readline-sync");
 const width = readlineSync.question("\nWidth: ");
 const length = readlineSync.question("Length: ");
 
-const nm = 25.4 ;
-let area = width * length * nm * nm ;
+const mm = 25.4 ;
+let area = width * length * mm * mm ;
 const areaI = Math.round(100 * area)/100 ;
 const areaF = area.toLocaleString("en");
 
