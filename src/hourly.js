@@ -11,6 +11,6 @@ const sunHour = Number(readlineSync.question("Sunday: "));
 
 const wage = 12.5 ;
 const earnings = (monHour * wage) + (tueHour * wage) + (wedHour * wage) + (thuHour * wage) + (friHour * wage) + (satHour * wage) + (sunHour * wage)
-const earnf = earnings.toLocaleString("en", Math.round(100 * earnings)/100);
+const earnf = earnings.toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 console.log("\nYou'll make $" + earnf + " this week.");
